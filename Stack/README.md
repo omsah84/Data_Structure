@@ -1,5 +1,5 @@
 Stack implementation method..
-There are three method are as following..
+There are as following..
 1. Array
 2. Arraylist
 3. LinkedList
