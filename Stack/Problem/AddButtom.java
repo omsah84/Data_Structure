@@ -1,7 +1,7 @@
-package Stack;
+package Stack.Problem;
 import java.util.*;
 
-public class ExampleProblem {
+public class AddButtom {
 
     public static void pushAtBottom(int data, Stack<Integer> s) {
         if (s.empty()) {
