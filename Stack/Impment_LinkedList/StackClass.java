@@ -1,4 +1,4 @@
-package Stack.Impment_LinkList;
+package Stack.Impment_LinkedList;
 public class StackClass {
 
     static class Node {
