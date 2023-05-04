@@ -18,7 +18,7 @@ public class LinkedList {
         }
     }
 
-    // addFirst in LinkedList
+    // addFirst in Linked List
     public static void addFirst(String data) {
         Node newNode = new Node(data);
 
@@ -31,7 +31,7 @@ public class LinkedList {
         head = newNode;
     }
 
-    // addLast
+    // addLast in linked list
     public static void addLast(String data) {
         Node newNode = new Node(data);
 
