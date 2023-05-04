@@ -108,7 +108,7 @@ public class LinkedList {
 
     //dive code
     public static void main(String[] args) {
-
+        //adding element 
         addFirst("sah");
         addFirst("kumar");
         addFirst("om");
