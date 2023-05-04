@@ -105,8 +105,8 @@ public class LinkedList {
         return size;
     }
 
-    
 
+    //dive code
     public static void main(String[] args) {
 
         addFirst("sah");
