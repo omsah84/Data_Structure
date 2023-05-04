@@ -74,7 +74,7 @@ public class LinkedList {
         head = head.next;
     }
 
-    // removeLast
+    // removeLast element
     public static void removeLast() {
         if (head == null) {
             System.out.println("List is empty.");
