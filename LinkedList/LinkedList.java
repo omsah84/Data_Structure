@@ -133,6 +133,8 @@ public class LinkedList {
 
         //removing fist element
         removeFirst();
+
+        //displaying
         printList();
         System.out.println();
         System.out.println("Size of list: "+getSize());
