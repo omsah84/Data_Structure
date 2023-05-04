@@ -98,6 +98,8 @@ public class LinkedList {
         secondNode.next = null;
     }
 
+
+    //to geting size of linked list
     static int getSize() {
         return size;
     }
