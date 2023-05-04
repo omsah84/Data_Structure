@@ -5,6 +5,7 @@ public class LinkedList {
     private static int size;
     static Node head;
 
+    //creating Node 
     static class Node {
         String data;
         Node next;
