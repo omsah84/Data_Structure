@@ -18,7 +18,7 @@ public class LinkedList {
         }
     }
 
-    // addFirst
+    // addFirst in LinkedList
     public static void addFirst(String data) {
         Node newNode = new Node(data);
 
