@@ -58,6 +58,7 @@ public class StackClass {
         s.push(3);
         s.push(5);
         s.push(1);
+        
         while (!s.isEmpty()) {
             System.out.println(s.peek());
             s.pop();
