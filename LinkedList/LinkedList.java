@@ -121,6 +121,8 @@ public class LinkedList {
         addLast("hi");
         addLast("hi");
 
+        //displaying 
+        
         printList();
         
         System.out.println();
