@@ -137,6 +137,8 @@ public class LinkedList {
         //displaying
         printList();
         System.out.println();
+
+        //to geting size of list
         System.out.println("Size of list: "+getSize());
 
     }
