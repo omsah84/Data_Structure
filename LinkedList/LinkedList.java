@@ -122,10 +122,11 @@ public class LinkedList {
         addLast("hi");
 
         //displaying 
-        
+
         printList();
-        
         System.out.println();
+
+        //removing last element
         removeLast();
         removeLast();
         removeLast();
