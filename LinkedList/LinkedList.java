@@ -47,7 +47,7 @@ public class LinkedList {
         currNode.next = newNode;
     }
 
-    // printList
+    // printList linked list
     public static void printList() {
         if (head == null) {
             System.out.println("List is empty.");
@@ -63,7 +63,7 @@ public class LinkedList {
         System.out.print("null");
     }
 
-    // removeFirst
+    // removeFirst element 
     public static void removeFirst() {
         if (head == null) {
             System.out.println("List is empty.");
