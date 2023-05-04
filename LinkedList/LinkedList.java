@@ -115,6 +115,7 @@ public class LinkedList {
         addFirst("am");
         addFirst("i");
 
+        //adding element in last
         addLast("hi");
         addLast("hi");
         addLast("hi");
