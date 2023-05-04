@@ -131,6 +131,7 @@ public class LinkedList {
         removeLast();
         removeLast();
 
+        //removing fist element
         removeFirst();
         printList();
         System.out.println();
