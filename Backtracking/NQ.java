@@ -2,11 +2,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.swing.border.Border;
+import javax.swing.plaf.basic.BasicBorders.MarginBorder;
 import javax.swing.text.AbstractDocument.LeafElement;
 
 public class NQ {
 
-    public boolean isSafe(int row, int col, char[][] board) {
+    public static boolean isSafe(int row, int col, char[][] board) {
         //horizontal 
         for (int j = 0; j < board.length; j++) {
             if (board[row][j] == 'Q') {
@@ -54,7 +55,7 @@ public class NQ {
         return true;
     }
     
-    public void saveBoard(char[][] board, List<List<String>> allBoard){
+    public static void saveBoard(char[][] board, List<List<String>> allBoard) {
         String row = "";
         List<String> newBoard = new ArrayList<>();
 
@@ -71,5 +72,36 @@ public class NQ {
             newBoard.add(row);
         }
         allBoard.add(newBoard);
+    }
+    
+    public static void helper(char[][] board, List<List<String>> allBoard, int col) {
+        if (col == board.length) {
+            saveBoard(board, allBoard);
+            return;
+        }
+
+        for (int row = 0; row < board.length; row++) {
+            if (isSafe(row, col, board)) {
+                board[row][col] = 'Q';
+                helper(board, allBoard, col + 1);
+                board[row][col] = '.';
+            }
+        }
+    }
+    
+    public static List<List<String>> solverNQueen(int n) {
+        List<List<String>> allBoard = new ArrayList<>();
+        char[][] board = new char[n][n];
+        helper(board, allBoard, n);
+
+        return allBoard;
+    }
+    
+    public static void main(String[] args) {
+        int n = 4;
+        List<List<String>> LL = new ArrayList<>(solverNQueen(n));
+
+        System.out.println(LL);
+
     }
 }
