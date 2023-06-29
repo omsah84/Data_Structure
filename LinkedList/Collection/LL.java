@@ -26,11 +26,11 @@ public class LL{
         LinkedList<String> list = new LinkedList<String>();
 
 
-        // list.addFirst("hell");
-        // list.addFirst("hey");
+        list.addFirst("hell");
+        list.addFirst("hey");
 
-        // list.addLast("om");
-        // list.addLast("sah");
+        list.addLast("om");
+        list.addLast("sah");
 
 
         System.out.println("The size of linked list: "+list.size());
